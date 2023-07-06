@@ -5,7 +5,7 @@ using namespace std;
 
 int CheckPrime(int Number) {
     bool Prime = true;
-    for (int i = 2; i < Number; i++) {
+    for (int i = 2; i < sqrt(Number); i++) {
         if (Number % i == 0) {
             Prime = false;
             break;
@@ -22,7 +22,7 @@ int CheckPrime(int Number) {
 }
 
 int main() {
-    for (int i = 2; i < 1000 + 1; ++i) {
+    for (int i = 2; i < 10000000 + 1; ++i) {
         CheckPrime(i);
     }
         
