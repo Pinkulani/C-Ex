@@ -3,7 +3,7 @@
 #include <iostream>
 using namespace std;
 
-int CheckPrime(int Number) {
+void CheckPrime(int Number) {
     bool Prime = true;
     for (int i = 2; i < sqrt(Number); i++) {
         if (Number % i == 0) {
@@ -17,8 +17,6 @@ int CheckPrime(int Number) {
     } //else {
         //cout << Number << " is not a prime number \n";
     //}
-    
-    return -1;
 }
 
 int main() {
