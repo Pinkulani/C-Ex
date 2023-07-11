@@ -38,7 +38,7 @@ void CreateRandomBoatPlacement(int** array)  {
     int hi; 
     // this random function will not work properly
     for (int X = 0; X < 10; X++) {
-        hi = rand() % 11;
+        hi = rand() % 10;
         array[X][hi] = 1;
         }
     } 
